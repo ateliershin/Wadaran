@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/icon_gokon"
+                android:src="@drawable/icon_gokon"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/icon_date"
+                android:src="@drawable/icon_date"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/icon_gaikokujin"
+                android:src="@drawable/icon_gaikokujin"/>
+
+        </LinearLayout>
+
+        <WebView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:id="@+id/webView2"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:layout_gravity="center_horizontal"
+                android:text="かごめかごめ食堂"
+                android:id="@+id/shopName"
+                android:textSize="24dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wadaRate"
+                    style="?android:attr/ratingBarStyleIndicator"
+                    android:rating="4.5"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.5"
+                    android:id="@+id/rateNumber"
+                    android:textSize="30dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:id="@+id/foodBtn1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/img00_s"
+                android:onClick="selectBtn1"
+                android:padding="8sp"
+                android:text="豚の味噌煮込み 800円"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+            <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:id="@+id/foodBtn2"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/img00_s"
+                android:onClick="onClickKeyReissue"
+                android:padding="8sp"
+                android:text="豚の味噌煮込み 800円"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+            <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:id="@+id/foodBtn3"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/img00_s"
+                android:onClick="onClickKeyReissue"
+                android:padding="8sp"
+                android:text="豚の味噌煮込み 800円"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:text="ここはやすくてうまくて素晴らしいブヒ。おししいブヒ。料理も多くて太った僕でも大満足ブヒ。ブヒブヒブヒ。"
+                android:id="@+id/wadarMemo"/>
+
+            <WebView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/webView"/>
+        </LinearLayout>
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  xmlns:map="http://schemas.android.com/apk/res-auto"
+                  android:padding="5dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="200dp"
+                  android:id="@+id/map"
+                  tools:context="com.wadaran.wadaran.MapsActivity"
+                  android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="住所："
+                    android:id="@+id/rAddress_static"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="東京都中央区銀座1-1-1"
+                    android:id="@+id/rAddress"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最寄り駅："
+                    android:id="@+id/rStation_static"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="銀座駅から徒歩４分"
+                    android:id="@+id/rStation"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TEL："
+                    android:id="@+id/rTel_static"/>
+
+                <Button
+                    android:background="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="03-1111-2222"
+                    android:id="@+id/telButton"
+                    android:singleLine="true"
+                    android:clickable="true"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+

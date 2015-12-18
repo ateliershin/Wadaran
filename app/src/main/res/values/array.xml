@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="plane_spn">
+        <item>@string/roppongi</item>
+        <item>@string/ginza</item>
+        <item>@string/ebisu</item>
+    </string-array>
+</resources>

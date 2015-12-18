@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.wadaran.wadaran.restaurantListActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/situation"
+            android:layout_weight="2"
+            android:text="合コン!"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"/>
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_weight="2"
+            android:text="六本木"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"/>
+
+        <TextView
+            android:id="@+id/numberOfRestaurants"
+            android:layout_weight="1"
+            android:text="10件"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/restaurantListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

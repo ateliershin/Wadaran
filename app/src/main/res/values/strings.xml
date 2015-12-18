@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wadaran</string>
+    <string name="situation_title">シチュエーションを選択！</string>
+    <string name="action_settings">Settings</string>
+    <string name="gokon_button">合コン</string>
+    <string name="gaikokujin_button">外国人接待</string>
+    <string name="date_button">デート♡</string>
+    <string name="title_activity_place">PlaceActivity</string>
+    <string name="place_title">場所を選択してね</string>
+    <string name="place_prompt">場所一覧</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="roppongi">六本木</string>
+    <string name="ginza">銀座</string>
+    <string name="ebisu">恵比寿</string>
+    <string name="title_activity_now_location">NowLocationActivity</string>
+    <string name="title_activity_restaurant_list">RestaurantListActivity</string>
+    <string name="title_activity_restaurant_details">RestaurantDetailsActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_food_pictures">FoodPicturesActivity</string>
+    <string name="title_activity_picture_page">PicturePageActivity</string>
+
+
+</resources>
