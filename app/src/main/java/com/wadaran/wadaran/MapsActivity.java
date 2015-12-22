@@ -22,6 +22,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private GoogleMap mMap;
     private WebView wv;
     private Button btn;
+    priavte Button hoge;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
