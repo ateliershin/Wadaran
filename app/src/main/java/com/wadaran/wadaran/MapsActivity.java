@@ -24,6 +24,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private Button btn;
     private Button hogehoge;
 
+    //これっす
+    //これっす
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
