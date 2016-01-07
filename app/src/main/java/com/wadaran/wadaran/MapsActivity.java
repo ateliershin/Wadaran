@@ -22,6 +22,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private GoogleMap mMap;
     private WebView wv;
     private Button btn;
+    private Button hogehoge;
 
     //これっす
     //これっす
@@ -48,6 +49,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         //アプリ起動時に読み込むURL
         myWebView2.getSettings().setJavaScriptEnabled(true);
         myWebView2.loadUrl("http://ghacker.jp/test/superslides-0.6.2/examples/touch.html#1");
+        //testtesttesttest
+        //awaawaaa
+        //aaaaaaaaaaaaaaaaaaaaaa
+        //hogehogehoge
+        //aaaaaaaaaaaa
+        //bbbbbbbbbbbbbbb buhi
     }
 
     public void selectBtn1(View view){
