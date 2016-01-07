@@ -27,6 +27,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     //これっす
     //これっす
     //2016/01/07はお腹がすきました
+    //あああ
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +51,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         //アプリ起動時に読み込むURL
         myWebView2.getSettings().setJavaScriptEnabled(true);
         myWebView2.loadUrl("http://ghacker.jp/test/superslides-0.6.2/examples/touch.html#1");
-        //testtesttesttest
+
         //awaawaaa
         //aaaaaaaaaaaaaaaaaaaaaa
         //hogehogehoge
