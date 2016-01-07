@@ -25,6 +25,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     //これっす
     //これっす
+    //
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
