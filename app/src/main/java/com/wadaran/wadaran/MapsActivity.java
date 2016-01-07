@@ -49,6 +49,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         //testtesttesttest
         //awaawaaa
         //aaaaaaaaaaaaaaaaaaaaaa
+        //hogehogehoge
     }
 
     public void selectBtn1(View view){
