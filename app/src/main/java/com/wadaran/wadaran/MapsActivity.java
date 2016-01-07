@@ -23,6 +23,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private WebView wv;
     private Button btn;
 
+    //これっす
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
