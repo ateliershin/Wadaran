@@ -28,6 +28,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     //これっす
     //2016/01/07はお腹がすきました
     //あああ
+    //さらだがすきです
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
