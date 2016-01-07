@@ -29,6 +29,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     //2016/01/07はお腹がすきました
     //あああ
     //さらだがすきです
+    //これから送別会
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
