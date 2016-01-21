@@ -35,7 +35,7 @@ public class FoodPicturesActivity extends Activity implements View.OnClickListen
         }
 
         _viewPager = (ViewPager) findViewById(R.id.viewpager);
-        PagerAdapter mPagerAdapter = new CustomPagerAdapter(this);
+        PagerAdapter mPagerAdapter = new CustomPagerAdapterFoodPic(this);
         _viewPager.setAdapter(mPagerAdapter);
     }
 
