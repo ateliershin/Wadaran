@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
@@ -22,7 +24,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private GoogleMap mMap;
     private WebView wv;
     private Button btn;
-    private Button hogehoge;
+    private ViewPager _viewPager = null;
 
     //これっす
     //これっす
@@ -45,16 +47,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         btn = (Button) findViewById(R.id.telButton);
         btn.setOnClickListener(this);
 
+        _viewPager = (ViewPager) findViewById(R.id.viewpager_restaurant);
+        PagerAdapter mPagerAdapter = new CustomPagerAdapterRestaurantPic(this);
+        _viewPager.setAdapter(mPagerAdapter);
+
         wv = (WebView)findViewById(R.id.webView);
         wv.setWebViewClient(new WebViewClient());
         wv.loadUrl("http://chart.apis.google.com/chart?cht=r&chxt=x,y&chds=0,5&chco=FF0000&chd=t:4.5,3.5,2.3,2.6,4.5,4.5&chls=2&chm=B,FF000020,0,0,0&chxl=1:|0|1|2|3|4|5|0:|%E3%82%B3%E3%82%B9%E3%83%91|%E6%9A%97%E3%81%95|%E5%80%8B%E5%AE%A4|%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9|%E5%92%8C%E9%A2%A8&chs=170x170");
-
-        WebView myWebView2 = (WebView)findViewById(R.id.webView2);
-        //標準ブラウザをキャンセル
-        //myWebView2.setWebViewClient(new WebViewClient());
-        //アプリ起動時に読み込むURL
-        myWebView2.getSettings().setJavaScriptEnabled(true);
-        myWebView2.loadUrl("http://ghacker.jp/test/superslides-0.6.2/examples/touch.html#1");
 
     }
 
