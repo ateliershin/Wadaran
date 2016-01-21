@@ -3,7 +3,7 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              tools:context="com.wadaran.wadaran.restaurantListActivity">
+              tools:context="com.wadaran.wadaran.RestaurantListActivity">
 
     <LinearLayout
         android:orientation="horizontal"
