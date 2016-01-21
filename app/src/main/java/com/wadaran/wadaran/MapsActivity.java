@@ -30,6 +30,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     //あああ
     //さらだがすきです
     //これから送別会
+    //あああ
 
 
     @Override
