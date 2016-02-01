@@ -11,8 +11,6 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-                
-                //test
 
         <LinearLayout
             android:orientation="horizontal"
@@ -107,7 +105,7 @@
                 android:id="@+id/foodBtn2"
                 android:layout_height="wrap_content"
                 android:drawableTop="@drawable/img00_s"
-                android:onClick="onClickKeyReissue"
+                android:onClick="selectBtn2"
                 android:padding="8sp"
                 android:text="豚の味噌煮込み 800円"
                 android:textColor="#FFFFFF"
@@ -120,7 +118,7 @@
                 android:id="@+id/foodBtn3"
                 android:layout_height="wrap_content"
                 android:drawableTop="@drawable/img00_s"
-                android:onClick="onClickKeyReissue"
+                android:onClick="selectBtn3"
                 android:padding="8sp"
                 android:text="豚の味噌煮込み 800円"
                 android:textColor="#FFFFFF"

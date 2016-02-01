@@ -25,7 +25,8 @@ public class FoodPicturesActivity extends Activity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_pictures);
         Intent intent = getIntent();
-        Log.d("pictures","FoodPicturesActivity - got intent");
+        int picturePos = intent.getIntExtra("picturePos",0);
+        Log.d("pictures","FoodPicturesActivity - got intent " + picturePos);
         //_btnList.add((ImageButton) findViewById(R.id.btn_start));
         _btnList.add((ImageButton) findViewById(R.id.btn_prev));
         _btnList.add((ImageButton) findViewById(R.id.btn_next));
@@ -35,7 +36,7 @@ public class FoodPicturesActivity extends Activity implements View.OnClickListen
         }
 
         _viewPager = (ViewPager) findViewById(R.id.viewpager);
-        PagerAdapter mPagerAdapter = new CustomPagerAdapterFoodPic(this);
+        PagerAdapter mPagerAdapter = new CustomPagerAdapterFoodPic(this,picturePos);
         _viewPager.setAdapter(mPagerAdapter);
     }
 

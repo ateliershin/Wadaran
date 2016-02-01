@@ -26,20 +26,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private Button btn;
     private ViewPager _viewPager = null;
 
-    //これっす
-    //これっす
-    //2016/01/07はお腹がすきました
-    //あああ
-    //さらだがすきです
-    //これから送別会
-    //あああ
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
@@ -59,9 +50,23 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     public void selectBtn1(View view){
         Intent intent = new Intent(this, FoodPicturesActivity.class);
+        intent.putExtra("picturePos",1);
         startActivity(intent);
         Log.d("pictures", "MapActivity - foodBtn1");
     }
+    public void selectBtn2(View view){
+        Intent intent = new Intent(this, FoodPicturesActivity.class);
+        intent.putExtra("picturePos",2);
+        startActivity(intent);
+        Log.d("pictures", "MapActivity - foodBtn1");
+    }
+    public void selectBtn3(View view){
+        Intent intent = new Intent(this, FoodPicturesActivity.class);
+        intent.putExtra("picturePos",3);
+        startActivity(intent);
+        Log.d("pictures", "MapActivity - foodBtn1");
+    }
+
     @Override
     public void onClick(View v) {
         // ダイアルボタン押下時
